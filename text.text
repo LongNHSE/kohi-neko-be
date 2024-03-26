@@ -1,0 +1,8 @@
+rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
+-e "ssh -i ~/.ssh/myapp.pem" \
+. ubuntu@ec2-13-211-132-40.ap-southeast-2.compute.amazonaws.com:~/app
+
+
+rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
+-e "ssh -i /mnt/d/KOHI-NEKO-PROJECT/kohi-neko-be/ssh/myapp.pem" \
+. ubuntu@ec2-13-211-132-40.ap-southeast-2.compute.amazonaws.com:~/app
